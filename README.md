@@ -3,7 +3,7 @@
 **基于 [SagerNet/sing-box](https://github.com/SagerNet/sing-box) 的高级 Web 面板**
 
 > 本仓库是 [alireza0/s-ui](https://github.com/alireza0/s-ui) 的二次开发分支,在保留上游全部能力的基础上,
-> 把已在 [3x-ui 改版](https://github.com/Teminuosi/3x-ui) 验证过的体验改进搬了过来:
+> 把已在 [3x-ui 改版](https://github.com/Heiyukeji/3x-ui) 验证过的体验改进搬了过来:
 > 全自动一键安装、面板更新指向本仓库、协议模板、行内二维码、批量删除、中转与多节点部署(逐步推进)。
 >
 > 仅供个人学习与交流,请勿用于非法用途,请勿用于生产环境。上游版权归原作者所有。
@@ -105,7 +105,7 @@ docker run -itd \
     -v $PWD/db/:/app/db/ \
     -v $PWD/cert/:/root/cert/ \
     --name s-ui --restart=unless-stopped \
-    ghcr.io/teminuosi/s-ui:latest
+    ghcr.io/Heiyukeji/s-ui:latest
 ```
 
 自行构建镜像:
@@ -167,7 +167,7 @@ go build -o sui main.go
 ./sui
 ```
 
-前端代码在独立子模块仓库:[Teminuosi/s-ui-frontend](https://github.com/Heiyukeji/s-ui-frontend)
+前端代码在独立子模块仓库:[Heiyukeji/s-ui-frontend](https://github.com/Heiyukeji/s-ui-frontend)
 
 </details>
 
