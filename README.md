@@ -10,11 +10,11 @@
 
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-> 🌐 **官网 / 导航站**：https://3yuedaohang.com — 免费节点、搭建教程、订阅工具，一站直达。
+> 🌐 **官网 / 导航站**：https://88.hy88.de — 免费节点、搭建教程、订阅工具，一站直达。
 >
-> 📺 **YouTube 频道**：https://www.youtube.com/@zhanzhang3yue
+> 📺 **YouTube 频道**：https://www.youtube.com/@heiyukeji
 >
-> 🖥️ **机器推荐**：https://3yuedaohang.com/cn2/banwagong
+> 🖥️ **机器推荐**：https://88.hy88.de
 
 ---
 
@@ -25,7 +25,7 @@
 一条命令装好,全程无需交互:全自动会自动生成随机管理员账号密码和随机面板路径,装完直接打印访问信息。
 
 ```sh
-SUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/s-ui/main/install.sh)
+SUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Heiyukeji/s-ui/main/install.sh)
 ```
 
 ### 交互式安装
@@ -33,14 +33,14 @@ SUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/s-ui/main
 想自己一步步设置端口、路径、账号密码,用普通模式:
 
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/s-ui/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Heiyukeji/s-ui/main/install.sh)
 ```
 
 装好后,在服务器上随时输入 `s-ui` 打开管理菜单(启动/停止/重启、改设置、改账号、SSL 证书、BBR 等)。
 
 ### Windows
 
-1. 从 [Releases](https://github.com/Teminuosi/s-ui/releases/latest) 下载最新 Windows 包并解压
+1. 从 [Releases](https://github.com/Heiyukeji/s-ui/releases/latest) 下载最新 Windows 包并解压
 2. 以管理员身份运行 `install-windows.bat`,按向导完成
 
 ---
@@ -111,7 +111,7 @@ docker run -itd \
 自行构建镜像:
 
 ```shell
-git clone --recurse-submodules https://github.com/Teminuosi/s-ui
+git clone --recurse-submodules https://github.com/Heiyukeji/s-ui
 cd s-ui
 docker build -t s-ui .
 ```
@@ -132,7 +132,7 @@ s-ui        # 菜单里选「卸载」
 这条**彻底清除**命令不依赖任何已安装的文件：
 
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/s-ui/main/install.sh) purge
+bash <(curl -Ls https://raw.githubusercontent.com/Heiyukeji/s-ui/main/install.sh) purge
 ```
 
 它会清掉：systemd 服务、`/etc/s-ui/`（含数据库）、`/usr/local/s-ui/`、
@@ -149,7 +149,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/s-ui/main/install.sh
 
 ```shell
 # 克隆(含前端子模块)
-git clone --recurse-submodules https://github.com/Teminuosi/s-ui
+git clone --recurse-submodules https://github.com/Heiyukeji/s-ui
 cd s-ui
 
 # 一键构建并运行(前端 + 后端)
@@ -167,7 +167,7 @@ go build -o sui main.go
 ./sui
 ```
 
-前端代码在独立子模块仓库:[Teminuosi/s-ui-frontend](https://github.com/Teminuosi/s-ui-frontend)
+前端代码在独立子模块仓库:[Teminuosi/s-ui-frontend](https://github.com/Heiyukeji/s-ui-frontend)
 
 </details>
 
